@@ -1,0 +1,46 @@
+# AI System Blueprint
+
+## Source
+This document is based on design discussions and planning sessions.
+
+---
+
+## Vision
+
+Build a:
+
+- AI agent workforce
+- pipeline automation system
+- web dashboard (agentic universe)
+- second brain
+- local AI model system
+- consulting + SaaS platform
+
+---
+
+## Core System
+
+Learn → Build → Project → Commit → Improve
+
+---
+
+## Architecture
+
+Frontend → Backend → Agents → Pipelines → Models → Memory → Infrastructure
+
+---
+
+## Key Components
+
+- Agent system
+- Pipelines (Jenkins + automation)
+- Web dashboard
+- Second brain
+- Content generation system
+
+---
+
+## Long-Term Goal
+
+A fully automated AI-powered business system.
+``
