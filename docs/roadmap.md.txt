@@ -1,0 +1,30 @@
+# AI Systems Architect Roadmap 🚀
+
+## 🎯 Ultimate Goal
+Build a fully automated AI-powered system including:
+- AI agent workforce
+- pipelines (automation + CI/CD)
+- web dashboards (agentic universe)
+- second brain (memory system)
+- local AI models (DeepSeek, Mistral, LLaMA)
+- consulting + SaaS business infrastructure
+
+---
+
+## 🧠 Core Philosophy
+Learn → Build → Project → Commit → Improve → System → Business
+
+---
+
+## 🔷 Phase 1 (Days 1–30) — Foundations
+Focus:
+- Python
+- FastAPI basics
+- GitHub workflows
+- basic AI agent
+
+### Projects
+- CLI tools
+- Agent v1 → v2
+- Basic API service
+
