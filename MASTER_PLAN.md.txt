@@ -1,0 +1,25 @@
+# AI Operating System Plan
+
+## Goal
+Build a personal AI system including:
+
+- AI workforce (agents)
+- pipelines (automation)
+- web dashboards (control system)
+- second brain (memory)
+- local AI models (DeepSeek, Mistral)
+- consulting + SaaS business infrastructure
+
+---
+
+## Daily System
+Learn → Build → Project → Commit → Improve
+
+---
+
+## Vision
+Create an automated AI-powered business system that can:
+- build apps
+- automate workflows
+- generate content (videos, tools)
+- support consulting work
