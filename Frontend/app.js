@@ -3,7 +3,16 @@ async function sendTask() {
 
     document.getElementById("output").innerText = "Processing...";
 
-    // This will connect to your backend later
-    document.getElementById("output").innerText =
-        "Agent response will appear here.";
+    try {
+        const response = await fetch("http://127.0.0.1:8000/ask?question=" + task, {
+            method: "POST"
+        });
+
+        const data = await response.json();
+        document.getElementById("output").innerText = data.response;
+
+    } catch (error) {
+        document.getElementById("output").innerText = "Error connecting to backend";
+        console.error(error);
+    }
 }
