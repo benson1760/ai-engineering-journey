@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>AI Command Center</h1>
+
+<input type="text" id="taskInput" placeholder="Enter task...">
+<button onclick="sendTask()">Run</button>
+
+<div id="output"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
