@@ -1,4 +1,4 @@
-from agent import agent_response
+from agent import orchestrator
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -19,5 +19,5 @@ def home():
 
 @app.post("/ask")
 def ask(question: str):
-    response = agent_response(question)
+    response = orchestrator(question)
     return {"response": response}
