@@ -1,3 +1,4 @@
+from agent import agent_response
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -18,6 +19,5 @@ def home():
 
 @app.post("/ask")
 def ask(question: str):
-    if "ai" in question.lower():
-        return {"response": "Start with Python, APIs, and building projects"}
-    return {"response": f"You asked: {question}"}
+    response = agent_response(question)
+    return {"response": response}
