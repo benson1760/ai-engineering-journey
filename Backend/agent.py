@@ -1,14 +1,10 @@
-def agent_response(task):
-    task = task.lower()
+def dev_agent(task):
+    return "Dev Agent: I can help you build APIs, debug code, and create systems."
 
-    if "ai" in task:
-        return "You should focus on Python, APIs, and building systems."
 
-    elif "project" in task:
-        return "Try building an API or improving your dashboard."
+def content_agent(task):
+    return "Content Agent: I can help generate ideas, scripts, and content."
 
-    elif "help" in task:
-        return "I can guide you. Ask about coding, projects, or next steps."
 
-    else:
-        return f"I received your task: {task}"
+def help_agent(task):
+    return "Help Agent: Ask me about Python, APIs, or your next step."
