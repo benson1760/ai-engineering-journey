@@ -1,13 +1,17 @@
+from pipeline import dev_pipeline, content_pipeline
+
+
 def dev_agent(task):
-    return "Dev Agent: I can help you build APIs, debug code, and create systems."
+    return dev_pipeline(task)
 
 
 def content_agent(task):
-    return "Content Agent: I can help generate ideas, scripts, and content."
+    return content_pipeline(task)
 
 
 def help_agent(task):
     return "Help Agent: Ask me about Python, APIs, or your next step."
+
 
 def orchestrator(task):
     task = task.lower()
