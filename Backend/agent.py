@@ -25,7 +25,7 @@ def content_agent(task):
 # Help Agent
 # Provides general assistance and guidance
 def help_agent(task):
-    return "Help Agent: Ask me about Python, APIs, or your next step."
+    return "I can help you learn Python and build systems."
 
 
 # ================================
