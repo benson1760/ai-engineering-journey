@@ -56,3 +56,37 @@ def run_jarvis():
         print("🧠 Thinking...")
 
         try:
+            # Send input to orchestrator (AI + pipelines)
+            response = orchestrator(user_input)
+
+        except Exception as e:
+            print(f"❌ Error in processing: {e}")
+            speak("Something went wrong while processing your request.")
+            continue
+
+        # ----------------------------
+        # STEP 4: SAVE MEMORY
+        # ----------------------------
+        save_to_memory(user_input, response)
+
+        # ----------------------------
+        # STEP 5: DISPLAY RESPONSE
+        # ----------------------------
+        print("Jarvis:", response)
+
+        # ----------------------------
+        # STEP 6: SPEAK RESPONSE
+        # ----------------------------
+        try:
+            spoken_response = shorten_response(response)
+            print("🔊 Speaking response...")
+            speak(spoken_response)
+        except Exception as e:
+            print(f"❌ Voice error: {e}")
+
+
+# ================================
+# ENTRY POINT
+# ================================
+if __name__ == "__main__":
+    run_jarvis()
